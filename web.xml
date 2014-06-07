@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>ShopingCart</display-name>
+	
+	
+	<servlet>
+	
+			<servlet-name>lg</servlet-name>
+			<servlet-class>com.shop.LoginDetails</servlet-class>	
+	
+	</servlet>
+	
+	<servlet-mapping>
+			<servlet-name>lg</servlet-name>
+			<url-pattern>/log</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>clogin</servlet-name>
+		<servlet-class>com.shop.CustomerLoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+			<servlet-name>clogin</servlet-name>
+			<url-pattern>/clog</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	
+			<servlet-name>ad</servlet-name>
+			<servlet-class>com.shop.AdminDetails</servlet-class>	
+	
+	</servlet>
+	
+	<servlet-mapping>
+			<servlet-name>ad</servlet-name>
+			<url-pattern>/adm</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	
+			<servlet-name>regDb</servlet-name>
+			<servlet-class>com.shop.RegisterDetails</servlet-class>	
+	
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>CustomerLoginServlet</display-name>
+		<servlet-name>CustomerLoginServlet</servlet-name>
+		<servlet-class>com.shop.CustomerLoginServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>MenClothsAddServlet</display-name>
+		<servlet-name>MenClothsAddServlet</servlet-name>
+		<servlet-class>com.shop.MenClothsAddServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>MensClothList</display-name>
+		<servlet-name>MensClothList</servlet-name>
+		<servlet-class>com.shop.MensClothList</servlet-class>
+	</servlet>
+	
+	
+	<servlet-mapping>
+			<servlet-name>regDb</servlet-name>
+			<url-pattern>/reg</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CustomerLoginServlet</servlet-name>
+		<url-pattern>/CustomerLoginServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>MenClothsAddServlet</servlet-name>
+		<url-pattern>/MenClothsAddServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>MensClothList</servlet-name>
+		<url-pattern>/MensClothList</url-pattern>
+	</servlet-mapping>
+	
+	
+	<welcome-file-list>
+		<welcome-file>Index.html</welcome-file>
+		
+	</welcome-file-list>
+</web-app>
