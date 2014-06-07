@@ -1,0 +1,23 @@
+
+SQL> desc mencloths;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------
+
+ BRAND                                              VARCHAR2(10)
+ SIZET                                              VARCHAR2(10)
+ COST                                               VARCHAR2(10)
+ TYPE                                               VARCHAR2(10)
+ CLOTHID                                   NOT NULL VARCHAR2(10)
+
+
+
+SQL> desc userdb;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- -------------------------
+
+ USERNAME                                           VARCHAR2(20)
+ NAME                                               VARCHAR2(20)
+ PASSWORD                                           VARCHAR2(20)
+ EMAIL                                              VARCHAR2(20)
+ PHONE                                              VARCHAR2(20)
+ GENDER                                             VARCHAR2(20)
